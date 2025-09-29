@@ -20,10 +20,10 @@ jobs:
         dotnet-version: '8.0.x'
 
     - name: Restore dependencies
-      run: dotnet restore Bootcampforgitrunner.csproj
+      run: dotnet restore Bootcampforgitrunner/Bootcampforgitrunner.csproj
 
     - name: Build
-      run: dotnet build Bootcampforgitrunner.csproj --no-restore --configuration Release
+      run: dotnet build Bootcampforgitrunner/Bootcampforgitrunner.csproj --no-restore --configuration Release
 
     - name: Test
-      run: dotnet test Bootcampforgitrunner.csproj --no-build --verbosity normal
+      run: dotnet test Bootcampforgitrunner/Bootcampforgitrunner.csproj --no-build --verbosity normal
